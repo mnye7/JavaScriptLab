@@ -1,0 +1,71 @@
+.attack-buttons{
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  background-color: black;
+  border: none;
+  border-radius: 100px;
+  width: 90px;
+  height: 30px;
+  color: white;
+  justify-content: center;
+  font-size: 16px;
+}
+
+li{
+  display: inline;
+  padding: 0.5em;
+}
+
+
+.progress-bars{
+  display: inline-flex;
+}
+
+
+.bottom-box{
+  border: black solid 2px;
+}
+
+.stats{
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: -50px;
+
+}
+
+.player-name{
+  width: 10%;
+  /* display: flex;
+  justify-content: flex-start;
+  flex-direction: column; */
+}
+
+#enemy-name{
+
+}
+
+.start{
+  display: flex;
+  justify-content: center;
+  margin-left: 3%;
+}
+
+/* #player-name{
+  width: 13%;
+  text-align: left;
+  margin-left: 5%;
+  float: left;
+  margin-top: 10%
+}
+
+#enemy-name{
+  width: 13%;
+  text-align: left;
+  margin-left: 5%;
+  float: left;
+  margin-top: 10%
+} */
