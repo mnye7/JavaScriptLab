@@ -1,73 +1,79 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <title>JavaScript Lab</title>
-  </head>
-  <body>
 
-    <div id="start-wrapper" class="start">
-      <div>
-        <button type="button" id="startButton" >START</button>
-      </div>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <title>JavaScript Lab</title>
+</head>
+
+<body>
+
+  <div id="start-wrapper" class="start">
+    <div>
+      <button type="button" id="startButton">START</button>
+    </div>
+  </div>
+
+  <div id="game-wrapper" style="display: none;">
+    <div class="attack-buttons">
+      <ul>
+        <li>
+          <button type="button" id="attackButton">ATTACK</button>
+        </li>
+        <li>
+          <button type="button" id="healButton">HEAL</button>
+        </li>
+        <li>
+          <button type="button" id="quitButton">QUIT</button>
+        </li>
+      </ul>
+
+      <p class="game-status"></p>
     </div>
 
-    <div id="game-wrapper" style="display: none;">
-      <div class="attack-buttons">
-        <ul>
-          <li>
-            <button type="button" id="attackButton">ATTACK</button>
-          </li>
-          <li>
-            <button type="button" id="heal">HEAL</button>
-          </li>
-          <li>
-            <button type="button" id="quit">QUIT</button>
-          </li>
-        </ul>
-
-        <p id="health-message"></p>
-      </div>
 
 
+    <div class="bottom-box">
 
-      <div class="bottom-box">
-
+      <div class="player-box">
         <div class="player-name">
-          <p id="user-name">Beavis</p>
+          <p id="user-name">Name</p>
         </div>
 
-        <div class="stats">
-          <h1>Player Status</h1>
-          <div>
-            <ul class="progress-bars">
-              <li>
-                <p>Health</p>
-                <progress value="40" max="40" class="playerHealth">Health</progress>
-              </li>
-              <li>
-                <p>Heal Count</p>
-                <progress value="40" max="40" class="healCount">Heal Count</progress>
-              </li>
-              <li>
-                <p>Wins</p>
-                <progress value="40" max="40" class="playerWins">Wins</progress>
-              </li>
+
+        <h1 class="player-stats">Player Status</h1>
+        <div>
+          <ul class="progress-bars">
+            <li>
+              <p>Health</p>
+              <progress value="40" max="40" class="playerHealth">Health</progress>
+            </li>
+            <li>
+              <p>Heal Count</p>
+              <progress value="2" max="2" class="healCount">Heal Count</progress>
+            </li>
+            <li>
+              <p>Wins</p>
+              <progress value="0" max="5" class="playerWins">Wins</progress>
+            </li>
           </ul>
 
-          <div class="player-name">
-            <p id="enemy-name">Butthead</p>
-          </div>
-          <div class="enemy-status">
-            <h1>Enemy Status</h1>
-            <p>Health</p>
-            <progress value="40" max="40">Health</progress>
+          <div class="enemy-box">
+            <div class="enemy-name">
+              <p id="enemy-name">Name</p>
+            </div>
+            <div class="enemy-status">
+              <h1>Enemy Status</h1>
+              <p>Health</p>
+              <progress value="10" max="10" class="enemyHealth">Health</progress>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </body>
+</body>
+
 </html>
 
 

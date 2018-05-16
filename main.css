@@ -22,11 +22,29 @@ li{
 
 .progress-bars{
   display: inline-flex;
+  width: 96%;
+  justify-content: center;
 }
 
 
 .bottom-box{
   border: black solid 2px;
+}
+
+.player-stats{
+  text-align: center;
+  width: 30%;
+  padding-left: 36%;
+}
+
+.enemy-status{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 20%;
+  margin-left: 8%;
+  justify-content: space-around;
+  margin-bottom: 2%;
 }
 
 .stats{
@@ -44,8 +62,22 @@ li{
   flex-direction: column; */
 }
 
-#enemy-name{
 
+.enemy-box{
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+}
+
+.enemy-status{
+  padding-left: 26%;
+}
+
+.enemy-name{
+  width: 10%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 .start{
